@@ -1,10 +1,28 @@
-const firebaseConfig = {
-  apiKey: "AIzaSyCxB8D_4Oap4WKG7z7emq7XlR9CnjJUXDE",
-  authDomain: "foodhacks-48218.firebaseapp.com",
-  databaseURL: "https://foodhacks-48218.firebaseio.com",
-  projectId: "foodhacks-48218",
-  storageBucket: "foodhacks-48218.appspot.com",
-  messagingSenderId: "509970892298",
-  appId: "1:509970892298:web:5db005252ea4ba808941f3",
-  measurementId: "G-7KQRK4QDGN"
-};
+function myFunction() {
+    // Declare variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+  
+    // Loop through all table rows, and hide those who don't match the search query
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      if (td) {
+        txtValue = td.textContent || td.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        } else {
+          tr[i].style.display = "none";
+        }
+      }
+    }
+  }
+
+function saveMeal(meal) {
+    if(meal == 1)
+    {
+        
+    }
+}
