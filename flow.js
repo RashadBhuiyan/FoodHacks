@@ -122,64 +122,64 @@ function removeItem()
     ul.removeChild(item);
 }
 
-function updateList()
-{
-    if (recipeCheck == 1)
-    {
+// function updateList()
+// {
+//     if (recipeCheck == 1)
+//     {
 
-    }
-    else if (recipeCheck == 2)
-    {
+//     }
+//     else if (recipeCheck == 2)
+//     {
 
-    }
-    else if (recipeCheck == 3)
-    {
+//     }
+//     else if (recipeCheck == 3)
+//     {
         
-    }
-    else if (recipeCheck == 4)
-    {
+//     }
+//     else if (recipeCheck == 4)
+//     {
         
-    }
-    else if (recipeCheck == 5)
-    {
+//     }
+//     else if (recipeCheck == 5)
+//     {
         
-    }
-    else if (recipeCheck == 6)
-    {
+//     }
+//     else if (recipeCheck == 6)
+//     {
         
-    }
-    else if (recipeCheck == 7)
-    {
+//     }
+//     else if (recipeCheck == 7)
+//     {
         
-    }
-    else if (recipeCheck == 8)
-    {
+//     }
+//     else if (recipeCheck == 8)
+//     {
         
-    }
-    else if (recipeCheck == 9)
-    {
+//     }
+//     else if (recipeCheck == 9)
+//     {
         
-    }
-    else if (recipeCheck == 10)
-    {
+//     }
+//     else if (recipeCheck == 10)
+//     {
         
-    }
-    else if (recipeCheck == 11)
-    {
+//     }
+//     else if (recipeCheck == 11)
+//     {
         
-    }
-    else if (recipeCheck == 12)
-    {
+//     }
+//     else if (recipeCheck == 12)
+//     {
         
-    }
-}
+//     }
+// }
 
 function update()
 {
     var table = document.getElementById("userTable");
     if (dayCount==0){
         var row = table.insertRow(1);
-        row.id = "rowMaster";        
+        row.id = "rowMaster";
     }
     if (dayCount ==  7)
     {
@@ -263,63 +263,58 @@ function update()
     updateDayCount();
 }
 
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+// // Create a "close" button and append it to each list item
+// var myNodelist = document.getElementsByTagName("LI");
+// var i;
+// for (i = 0; i < myNodelist.length; i++) {
+//   var span = document.createElement("SPAN");
+//   var txt = document.createTextNode("\u00D7");
+//   span.className = "close";
+//   span.appendChild(txt);
+//   myNodelist[i].appendChild(span);
+// }
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+// // Click on a close button to hide the current list item
+// var close = document.getElementsByClassName("close");
+// var i;
+// for (i = 0; i < close.length; i++) {
+//   close[i].onclick = function() {
+//     var div = this.parentElement;
+//     div.style.display = "none";
+//   }
+// }
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+// // Add a "checked" symbol when clicking on a list item
+// var list = document.querySelector('ul');
+// list.addEventListener('click', function(ev) {
+//   if (ev.target.tagName === 'LI') {
+//     ev.target.classList.toggle('checked');
+//   }
+// }, false);
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
+// // Create a new list item when clicking on the "Add" button
+// function newElement() {
+//   var li = document.createElement("li");
+//   var inputValue = document.getElementById("myInput").value;
+//   var t = document.createTextNode(inputValue);
+//   li.appendChild(t);
+//   if (inputValue === '') {
+//     alert("You must write something!");
+//   } else {
+//     document.getElementById("myUL").appendChild(li);
+//   }
+//   document.getElementById("myInput").value = "";
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+//   var span = document.createElement("SPAN");
+//   var txt = document.createTextNode("\u00D7");
+//   span.className = "close";
+//   span.appendChild(txt);
+//   li.appendChild(span);
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-
-
-
-
-
+//   for (i = 0; i < close.length; i++) {
+//     close[i].onclick = function() {
+//       var div = this.parentElement;
+//       div.style.display = "none";
+//     }
+//   }
+// }

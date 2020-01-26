@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Meal Space</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="styles.css" />
+
+	</head>
+	<body class="bg2">
+        <header>
+            <div class="header2">
+                <img src="mealspace.png" class="logo" />
+                
+                <ul class="menu">
+                    <li><a href="FeedMeSite_Home.html">Home</a></li>
+                    <li><a href="mealPlan.html">Meal Planner</a></li>
+                    <li><a href="myMeals.html">My Recipes</a></li>
+                    <li><a href="searchRecipes.html">Find Recipes</a></li>
+                    <li><a href="grocery.html">Grocery List</a></li>
+                </ul>
+            </div>
+    
+        </header>
+        <br>
+        <h1 class="mainH1">Find Recipes</h1>
+        <br>
+        <br>
+        <div class="centerAlign">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search..."/>
+        
+        <table id="myTable">
+        <tr class="header">
+            <th style="width:40%;">Recipe</th>
+            <th style="width:30%;">Prep Time</th>
+            <th style="width:10%;"></th>"
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/213742/meatball-nirvana/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub">Meatball Nirvana</a></td>
+            <td>40 minutes</td>
+            <td><button onclick="saveMeal(1)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/17991/stuffed-green-peppers-i/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub">Stuffed Green Peppers I</a></td>
+            <td>1 hour</td>
+            <td><button onclick="saveMeal(2)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/85389/gourmet-mushroom-risotto/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub">Gourmet Mushroom Risotto</a></td>
+            <td>50 minutes</td>
+            <td><button onclick="saveMeal(3)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/16239/easy-slow-cooker-french-dip/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Easy Slow Cooker French Dip
+            </a></td>
+            <td>7 hours 10 minutes</td>
+            <td><button onclick="saveMeal(4)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/21694/marinated-grilled-shrimp/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Marinated Grilled Shrimp
+            </a></td>
+            <td>1 hour</td>
+            <td><button onclick="saveMeal(5)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/16881/burrito-pie/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Burrito Pie
+            </a></td>
+            <td>1 hour</td>
+            <td><button onclick="saveMeal(6)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/34746/baked-salmon-ii/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Baked Salmon II
+            </a></td>
+            <td>1 hour</td>
+            <td><button onclick="saveMeal(7)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/21176/baked-dijon-salmon/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Baked Dijon Salmon
+            </a></td>
+            <td>35 minutes</td>
+            <td><button onclick="saveMeal(8)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/78370/hamburger-steak-with-onions-and-gravy/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Hamburger Steak with Onions and Gravy
+            </a></td>
+            <td>40 minutes</td>
+            <td><button onclick="saveMeal(9)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/20675/rempel-family-meatloaf/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Rempel Family Meatloaf
+            </a></td>
+            <td>55 minutes</td>
+            <td><button onclick="saveMeal(10)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/21174/bbq-pork-for-sandwiches/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">BBQ Pork for Sandwiches
+            </a></td>
+            <td>4 hours 55 minutes</td>
+            <td><button onclick="saveMeal(11)">Save Me!</button></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.allrecipes.com/recipe/26257/bow-ties-with-sausage-tomatoes-and-cream/?internalSource=hub%20recipe&referringId=17562&referringContentType=Recipe%20Hub
+                ">Bow Ties with Sausage, Tomatoes and Cream
+            </a></td>
+            <td>45 minutes</td>
+            <td><button onclick="saveMeal(12)">Save Me!</button></td>
+        </tr>
+        </table>
+    </div>
+        <script src="flow.js"></script>
+	</body>
+</html>
